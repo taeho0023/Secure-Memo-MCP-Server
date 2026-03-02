@@ -30,13 +30,16 @@ def get_safe_path(subdir: str):
 4. 실습 및 검증 결과 (Evidence)
 ✅ 연결 성공 로그 (mcp.log)
 Server started and connected successfully 문구를 통해 앱-서버 간 핸드셰이크 확인
+<img width="634" height="21" alt="화면 캡처 2026-03-02 120004" src="https://github.com/user-attachments/assets/196160df-682c-40d3-8677-1791e98dba29" />
+
 
 서버가 보유한 4가지 도구(list, read, write, delete)가 Claude에게 정상 전달됨
 
 ✅ 실제 작동 화면
 정상 작동: Claude에게 요약을 시키면 write_file 도구를 사용해 성공기록.txt 생성
-
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/3beffc11-5a9d-478f-80fd-07b7a99cd001" />
 보안 차단: ../ 경로 접근 시 서버 측에서 PermissionError를 발생시키며 차단 성공
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/d12643a7-7bf1-4244-9d8b-3d54f7f0b565" />
 
 5. 트러블슈팅 및 교훈 (Troubleshooting)
 파일 확장자 문제: 윈도우에서 .json.txt로 저장되는 문제를 터미널 명령어로 강제 해결
